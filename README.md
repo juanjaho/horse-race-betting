@@ -2,15 +2,15 @@
 
 ## Project Report and Presentation
 
-- [QF206 Project Report](./QF206%20G1T3%20-%20Report.pdf)
-- [QF206 Project Presentation](./QF206%20G1T3%20-%20Slides.pdf)
+- [QF206 Project Report](./report/QF206%20G1T3%20-%20Report.pdf)
+- [QF206 Project Presentation](./report/QF206%20G1T3%20-%20Slides.pdf)
 
 ## Results
 
 ### Best Performance of each Strategy
 
-![alt text](./chart/result/mean_variance_compiled_result.png)
-![alt text](./chart/result/machine_learning_compiled_result.png)
+![Mean Variance Strategy](./chart/result/mean_variance_compiled_result.png)
+![Machine Learning Strategy](./chart/result/machine_learning_compiled_result.png)
 
 ### Summary
 
