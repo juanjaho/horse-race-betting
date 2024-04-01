@@ -1,7 +1,4 @@
-<br />
-<div align="center">
-  <h2 align="center">Investigating Alpha in Horse Racing</h2>
-</div>
+# Investigating Alpha in Horse Racing
 
 ## Project Report and Presentation
 
