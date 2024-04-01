@@ -12,27 +12,27 @@
   * Finishing Position Classifiers: 53.9% accuracy
 
 ### Using a Flat Betting Strategy
-<img src="chart/result/fb_race_speed_result.png">
+<img src="chart/result/race_speed_payoff.png">
 
 > Cumulative returns using an ensemble of regressors to predict the average race speed of a horse
 
-<img src="chart/result/fb_finish_time_result.png">
+<img src="chart/result/finish_time_payoff.png">
 
 > Cumulative returns using an ensemble of regressors to predict the finish time of a horse
 
-<img src="chart/result/fb_finish_position_result.png">
+<img src="chart/result/finish_position_payoff.png">
 
 > Cumulative returns using an ensemble of classifiers to predict the finishing position of a horse
 
 ### Using Kelly Criterion to allocate bet amounts
-<img src="chart/result/kc_race_speed_result.png">
+<img src="chart/result/race_speed_payoff_kc.png">
 
 > Cumulative returns using an ensemble of regressors to predict the average race speed of a horse
 
-<img src="chart/result/kc_finish_time_result.png">
+<img src="chart/result/finish_time_payoff_kc.png">
 
 > Cumulative returns using an ensemble of regressors to predict the finish time of a horse
 
-<img src="chart/result/kc_finish_position_result.png">
+<img src="chart/result/finish_position_payoff_kc.png">
 
 > Cumulative returns using an ensemble of classifiers to predict the finishing position of a horse
