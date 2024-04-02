@@ -1,50 +1,53 @@
-# Investigating Alpha in Horse Racing
+<br />
+<div align="center">
+  <h2 align="center">Investigating Alpha in Horse Race Betting</h2>
+  <p align="center">
+    Improving Betting Accuracy and Profitability with Machine Learning
+  </p>
+</div>
+<br />
 
-## Project Report and Presentation
+## About the Project
 
-- [QF206 Project Report](./report/QF206%20G1T3%20-%20Report.pdf)
-- [QF206 Project Presentation](./report/QF206%20G1T3%20-%20Slides.pdf)
+This project aims to explore potential opportunities in the Hong Kong Horse Race Betting market, utilising data from Hong Kong Jockey Club.
 
 ## Results
 
-### Best Performance of each Strategy
+- Using a single-bet betting strategy where we only bet the horse with the highest probability of winning in a race, we are able to make substantial profits
+- Flat betting yielded the highest absolute profits
+- While using Kelly Criterion to perform bet allocation reduced absolute profits, average returns per bet consistently outperformed flat betting across all methods and target variables
+- Overall, all models are able to predict the winner of a race more than 50% of the time
 
-![Mean Variance Strategy](./chart/result/mean_variance_compiled_result.png)
-![Machine Learning Strategy](./chart/result/machine_learning_compiled_result.png)
+### Overview of Model Profitability with Betting Strategy
 
-### Summary
+|                              | Race Speed Regressors | Finish Time Regressors | Finishing Position Classifiers |
+| :--------------------------: | :-------------------: | :--------------------: | :----------------------------: |
+|         Flat Betting         |        $41,250        |        $31,290         |             $8,430             |
+| Betting with Kelly Criterion |      $30,360.08       |       $28,419.82       |           $4,914,48            |
+|     Prediction Accuracy      |         57.3%         |         55.1%          |             53.9%              |
 
-- Using a fixed-bet betting strategy where we only bet the horse with the highest probability of winning in a race, we are able to make greatest absolute profits.
-- Using Kelly Criteriod reduces absolute profits but improves the normalised returns (e.g. Mean Returns, Sharpe Ratio)
-- Overall, all ML models are able to predict the winner of a race more than 50% of the time
-  - Average Race Speed Regressors: 57.3% accuracy (Highest Cum Returns)
-  - Finish Time Regressors: 55.1% accuracy
-  - Finishing Position Classifiers: 53.9% accuracy
+## Using a Flat Betting Strategy
 
-### Using a Flat Betting Strategy (ML)
+<img src="chart/results/race_speed_payoff.png">
 
-<img src="chart/result/fb_race_speed_result.png">
-
-> Cumulative returns using an ensemble of regressors to predict the average race speed of a horse
-
-<img src="chart/result/fb_finish_time_result.png">
-
-> Cumulative returns using an ensemble of regressors to predict the finish time of a horse
+<img src="chart/results/finish_time_payoff.png">
 
 <img src="chart/result/fb_finish_position_result.png">
 
 > Cumulative returns using an ensemble of classifiers to predict the finishing position of a horse
 
-### Using Kelly Criterion to allocate bet amounts (ML)
+### Using Kelly Criterion to allocate bet amounts
 
 <img src="chart/result/kc_race_speed_result.png">
 
-> Cumulative returns using an ensemble of regressors to predict the average race speed of a horse
+<img src="chart/results/finish_time_payoff_kc.png">
 
-<img src="chart/result/kc_finish_time_result.png">
+<img src="chart/results/finish_position_payoff_kc.png">
 
-> Cumulative returns using an ensemble of regressors to predict the finish time of a horse
+### Model Training Performance
 
-<img src="chart/result/kc_finish_position_result.png">
+<img src="chart/results/race_speed_model_eval.png">
+
+<img src="chart/results/finish_time_model_eval.png">
 
 > Cumulative returns using an ensemble of classifiers to predict the finishing position of a horse
